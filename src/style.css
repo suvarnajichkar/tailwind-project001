@@ -1,0 +1,427 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner{
+    @apply bg-[url('images/bg-banner3.png')]
+     bg-contain bg-center bg-repeat;
+}
+header {
+    @apply bg-black text-white;
+}
+
+.nav {
+    @apply flex items-center justify-between px-12 h-16 z-10;
+}
+
+.menu1 {
+    @apply  md:static md:flex-row md:justify-between lg:justify-evenly  bg-black absolute -top-full  w-full  h-full left-0 flex
+     flex-col items-end md:items-center text-[16px]  px-5 z-10;
+
+     .order{
+        @apply p-0 mt-6 md:mt-0 lg:py-2 lg:px-1 
+        rounded-tl-lg rounded-br-lg border-[#DD9A25]
+         border-[1px] border-solid;
+     }
+     ul{
+        @apply  md:flex flex-row xl:ml-[500px]  ;
+       
+     }
+     li{
+        @apply py-1 flex flex-col  items-center ;
+     }
+     a{
+        @apply p-3 xl:p-7 ;
+     }
+    }
+ 
+
+.toggle-btn {
+    @apply text-2xl cursor-pointer md:hidden;
+   
+}
+.toggle-close{
+    @apply  md:hidden cursor-pointer text-2xl 
+}
+.logo-image{
+    @apply w-20 relative top-5 z-10 ;
+}
+
+/* Section1 ************************************************ */
+
+.image1{
+    @apply relative;
+   img{
+    @apply w-[100%];
+   }
+}
+.plate{
+    @apply w-1/3 h-1/3 absolute right-[10%] bottom-[40%]  xl:right-40 xl:bottom-72 lg:right-28 lg:bottom-52 2xl:right-52 2xl:bottom-96;
+    /* img{
+        @apply  w-[100%];
+    } */
+}
+.vector{
+    @apply grid grid-cols-1 place-items-center -mt-7 md:-mt-16 lg:-mt-20 xl:-mt-48 ;
+    img{
+        @apply  w-[50%];
+
+    }
+/* Content ************************************************************ */
+    
+}
+.content1{
+    @apply  text-center md:p-20 ;
+
+    h1{
+        @apply  font-bold text-[#597346]  md:text-[70px]  md:leading-[80px];
+        font-family: "David Libre", serif;
+    }
+    .button{
+        @apply grid grid-cols-[150px_150px] place-content-center place-items-center mt-5;
+        .takeaway{
+            @apply
+            text-[#597346] text-xl py-1 px-5 rounded-tl-lg rounded-br-lg border-[#597346] border-[1px] border-solid;
+        }
+        .delivery{
+            @apply text-xl py-1 px-5 text-white bg-[#DD9A25] rounded-tl-xl rounded-br-xl;
+        }
+    }
+}
+
+.content2{
+    @apply w-[80%] mx-auto  grid grid-cols-1 md:grid-cols-2 md:place-content-center md:place-items-start md:w-[100%] md:p-3 ;
+    .image3{
+        @apply  grid md:place-content-end md:place-items-end md:w-[100%] ;
+    }
+}
+.text{
+   @apply md:mt-28;
+    p{
+        @apply w-[100%] md:mb-6 mb-4 xl:w-[80%] ;
+    }
+    .button{
+        span{
+        @apply text-xl py-1 px-5 text-white bg-[#DD9A25] rounded-tl-xl rounded-br-xl ;
+    }
+}
+h2{
+    @apply text-2xl text-[#DD9A25];
+    font-family: "David Libre", serif;
+}
+h1{
+    @apply text-5xl text-[#597346] font-extrabold ;
+    font-family: "David Libre", serif;
+}
+}
+/* Section2 ******************************************************* */
+.section2{
+   
+    .heading{
+        @apply text-center p-9 mb-10;
+        h2{
+            @apply text-2xl text-[#DD9A25];
+            font-family: "David Libre", serif;
+        }
+        h1{
+            @apply text-5xl text-[#597346] font-extrabold;
+            font-family: "David Libre", serif;
+        }
+        
+    }
+    .cards{
+        @apply grid md:grid-cols-2 grid-cols-1 lg:mt-20 gap-y-24 lg:grid-cols-4  gap-5 w-[80%] mx-auto ;
+    }
+    .card{
+        @apply px-5 text-center rounded-tl-3xl rounded-br-3xl border-[#597346] border-[1px] 
+        border-solid grid place-items-center;
+        .image4 {
+            @apply w-[50%] lg:w-[100%] xl:w-[60%];
+            img{
+                @apply -mt-[60px] lg:-mt-[80px];
+            }
+        }
+  
+        .main{
+                h2{
+                    @apply font-bold text-xl p-4 lg:text-lg ;
+                }
+                p{
+                    @apply text-base mb-7;
+                }
+        }
+    }
+}
+.image5{
+   @apply  grid place-content-center text-white rounded-full 
+   w-16 h-16 text-2xl mx-auto bg-[#DD9A25] -mb-8 ;
+   
+}
+ 
+/* Section3 ************************************************************ */
+.section3{
+    .heading{
+        @apply text-center p-9;
+        h2{
+            @apply text-2xl text-[#DD9A25];
+            font-family: "David Libre", serif;
+        }
+        h1{
+            @apply text-5xl text-[#597346] font-extrabold;
+            font-family: "David Libre", serif;
+        }
+    }
+    .frames{
+        @apply grid  grid-cols-1 gap-y-6  place-items-center
+         md:grid-cols-6 gap-x-6 md:w-[80%] mx-auto mb-6;
+    }
+    .picture{
+        @apply rounded-3xl;
+    }
+}
+/* Section4 ************************************************************ */
+.section4{
+    .heading{
+        @apply text-center p-9;
+        h2{
+            @apply text-2xl text-[#DD9A25] ;
+            font-family: "David Libre", serif;
+        }
+        h1{
+            @apply text-5xl text-[#597346] font-extrabold;
+            font-family: "David Libre", serif;
+        }
+    }
+    .frames{
+        @apply grid grid-cols-1 place-items-center gap-y-6 md:gap-x-0 md:grid-cols-3  lg:grid-cols-6 rounded-full md:w-[80%] mx-auto;
+        .picture{
+            @apply text-center items-center text-[15px] ;
+            img{
+                @apply md:w-[100%] ;
+            }
+        }
+        h1{
+            @apply font-bold ;
+             }
+            .health{
+                @apply text-[#DD9A25];
+            }
+       
+    }
+}
+/* Section5 ******************************************************* */
+.section5{
+    @apply w-[80%] mx-auto mt-16;
+    .heading{
+        @apply py-9;
+
+        h2{
+            @apply text-2xl text-[#DD9A25]   ;
+            font-family: "David Libre", serif;
+        }
+        hr{
+            @apply border-[#DD9A25] w-11 border-[1px] ;
+        }
+    }
+}
+.info{
+    @apply grid  grid-cols-1 lg:grid-cols-2;
+    .salad_text{
+        @apply grid md:grid-cols-2;
+    }
+    
+    }
+    .price{
+        @apply  md:text-center font-bold;
+    }
+    .text1{
+
+       
+        h3{
+            @apply font-bold;
+        }
+        p{
+            @apply text-[12px] text-[#8C9A82] mb-3;
+        }
+    }
+/* Section6 ******************************************************* */
+
+.section6 {
+    @apply relative h-[400px] md:h-[600px] overflow-hidden; 
+.section6-content                                                                                                                                   {
+        @apply absolute md:ml-10 xl:ml-36 md:w-1/2 lg:w-[380px]  w-full top-1/2  left-0 md:left-0 transform md:translate-x-12 md:-translate-y-44 z-20  text-white md:p-2  py-2 px-5 translate-x-1  -translate-y-32 ; 
+   
+        h2{
+            @apply  text-xl md:text-3xl text-[#DD9A25] mb-5;
+            font-family: "David Libre", serif;
+        }
+        p{
+            @apply text-[16px] md:text-[18px] mb-5;
+
+        }
+        
+    }
+}
+.section6::before {
+    content: '';
+    @apply absolute w-full h-full top-0 left-0 z-10 bg-gradient-to-r from-black to-transparent; 
+   
+}
+.section6 img {
+    @apply w-full h-full ; 
+}
+.section6-content{
+    .button{
+        span{
+        @apply text-xl py-1 px-5 text-white bg-[#DD9A25] rounded-tl-xl rounded-br-xl ;
+    };
+}
+}
+/* section7************************************************************ */
+.section7{
+    .heading{
+        @apply md:py-9 py-4 text-center;
+
+        h2{
+            @apply text-3xl text-[#597346]   ;
+            font-family: "David Libre", serif;
+        }
+        h1{
+            @apply text-4xl font-bold;
+            font-family: "David Libre", serif;
+           
+        }
+}
+}
+.section7{
+    /* @apply bg-gray-200; */
+   
+    .happy-customer{
+        @apply grid  grid-cols-1 md:grid-cols-2 md:gap-x-7 xl:grid-cols-4 gap-x-4 w-[80%] mx-auto  md:mb-40;
+      
+    }
+    
+    .layout{
+        @apply grid grid-cols-1 justify-items-center;
+        
+    }
+    .photocopy{
+        @apply w-20 relative top-[40px];
+        img{
+            @apply rounded-full;
+        }
+        
+    }
+.poster{
+    @apply  text-center rounded-tl-[40px] rounded-br-[40px] rounded-tr-[15px]
+    rounded-bl-[15px] bg-white
+    border-[1px] border-solid;
+   padding-top: 30px;
+     
+   .main-text{
+    @apply p-5;
+    h1{
+        @apply font-bold text-[13px] leading-none;
+    }
+
+        h2{
+            @apply  text-xl text-[12px]  ;
+        }
+        p{
+            @apply text-[12px] mb-7 pt-0;
+        }
+   }  
+}
+}
+
+/* Section8*********************************************************** */
+.section8{
+  background-image: url('images/Image bg.png');
+  font-family: "David Libre", serif;
+  @apply bg-cover md:h-[500px]  h-[200px] mt-10 bg-no-repeat w-[80%]
+  mx-auto grid place-content-center place-items-center 
+  text-white text-center mb-20 md:rounded-tr-[40px]  md:rounded-br-[40px] rounded-tr-[20px] rounded-br-[20px];
+  h3{
+    @apply md:mb-10 mb-3 font-bold  md:text-4xl  text-lg;
+  }
+
+}
+.input1{
+    @apply relative grid md:grid-cols-[1fr_100px] grid-cols-2 mx-3
+     bg-white md:text-sm md:p-4 p-2 text-white  rounded-tl-xl rounded-br-xl;
+}
+.button1{
+    @apply  grid place-content-center place-items-center;
+
+    span{
+    @apply  absolute text-sm md:py-[4px] md:px-2 p-1 text-white
+     bg-[#DD9A25]   ;
+}
+};
+/* Section9************************************************************* */
+.section9{
+    @apply  bg-black pb-5;
+    .kale-logo{
+        @apply text-center ;
+    }
+}
+.footer{
+    @apply grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-y-2   text-gray-400
+    lg:justify-items-center md:justify-items-start md:ml-10 px-5 ;
+    .navigation{
+        h1{
+            @apply text-yellow-600 text-2xl pb-4;
+        }
+            ul{
+                @apply text-[15px] py-2;
+            }
+    }
+    .open{
+        @apply grid grid-cols-2;
+    }
+    .logo-us{
+        @apply flex gap-x-3 items-center;
+        .facbook{
+            @apply rounded-full p-3 w-10 border-orange-400  border-solid border-[1px];
+        }
+        .insta{
+            @apply  rounded-full p-3 w-10 border-orange-400  border-solid border-[1px];
+        }
+        .twitter{
+        
+                @apply  rounded-full w-10 p-3 border-orange-400  border-solid border-[1px];
+        }
+    }
+    .menu{
+        h1{
+            @apply text-yellow-600 text-2xl pb-3;
+        }
+            ul{
+                @apply text-[15px] py-2;
+            }
+    }
+    .opening{
+        h1{
+            @apply text-yellow-600 text-2xl pb-3;
+        }
+            ul{
+                @apply text-[15px] py-2;
+            }
+    }
+    .follow{
+        h1{
+            @apply text-yellow-600 text-2xl pb-3;
+        }
+            ul{
+                @apply text-[15px] py-2;
+            }
+    }
+    
+}
+
+.kale-logo{
+    @apply grid justify-items-center relative -top-10;
+}
+.footer-last{
+    @apply grid md:grid-cols-3 grid-cols-1 text-gray-400 text-center mt-10;
+}
